@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkrubitoSec</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS file -->
+</head>
+<body id="top">
+  <header>
+    <div class="container">
+      <nav>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li class="dropdown">
+            <a href="#contact">Contact</a>
+            <ul class="dropdown-menu">
+              <li><a href="#email">Email</a></li>
+              <li><a href="#phone">Phone</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <section id="hero">
+    <div class="container">
+      <h1>Welcome to SkrubitoSec</h1>
+      <p>Protecting your digital assets from modern threats.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            At SkrubitoSec, we are dedicated to protecting your digital assets and ensuring your online safety. With a team of highly skilled and experienced professionals, we offer comprehensive cybersecurity solutions to safeguard your business and personal information from cyber threats.
+          </p>
+          <p>
+            Our mission is to provide cutting-edge cybersecurity services tailored to meet the unique needs of our clients. We leverage the latest technologies and industry best practices to proactively identify vulnerabilities, detect potential attacks, and respond swiftly to mitigate risks.
+          </p>
+          <p>
+            With our expertise in network security, data encryption, and safe coding practices, we empower businesses of all sizes to navigate the evolving threat landscape with confidence. Whether you need assistance with penetration testing, security audits, or incident response, our team is committed to delivering top-notch solutions to protect your valuable assets.
+          </p>
+          <p>
+            Trust SkrubitoSec to be your reliable partner in safeguarding your digital presence. Contact us today to learn more about our services and how we can help you stay one step ahead of cyber threats.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="images/ljudi.jpg" alt="About Us Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <ul class="services-list">
+        <li>
+          <img src="images/hacker-1944688_1280.jpg" width="310px" alt="Network Security">
+          <span>Safe coding</span>
+        </li>
+        <li>
+          <img src="images/matrix-2354492.jpg" width="350px" alt="Web Application Security">
+          <span>Cybersecurity</span>
+        </li>
+        <li>
+          <img src="images/foto1.jpg" width="310px" alt="Data Encryption">
+          <span>Portfolio</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Skrubitos</p>
+    </div>
+  </footer>
+  <script>
+    // Smooth scroll effect when clicking on a link
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const element = document.querySelector(this.getAttribute('href'));
+        const top = element.offsetTop;
+        window.scrollTo({
+          top,
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>
